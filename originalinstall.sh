@@ -19,13 +19,11 @@ if [ -f /var/run/reboot-required ]; then
 fi
 
 ###############################################################################
-# Install XRDP
-#
-apt install -y xrdp
+# Install XRDP and XORG
+apt install -y xrdp xorg
 
 ###############################################################################
 # Configure XRDP
-#
 systemctl enable xrdp
 systemctl enable xrdp-sesman
 
